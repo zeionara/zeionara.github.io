@@ -1,8 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from './sidebar'
 
-// console.log(JSON.stringify(generateSidebar('hyprfiction'), null, 2))
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Оф сайт @zeionara",
@@ -11,33 +9,22 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Hyprfiction', link: '/hyprfiction' }
     ],
 
     sidebar: {
-      '/hyprfiction/': generateSidebar('hyprfiction'),
-      '/foo/': generateSidebar('foo')
+      '/hyprfiction/': generateSidebar('hyprfiction')
     },
-
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/zeionara' },
       { icon: 'instagram', link: 'https://instagram.com/zeionara' }
     ],
 
-    footer: {
-      message: 'Подпишись на <a href="https://t.me/zeioch" target="_blank">мой тг канал</a>',
-      copyright: '© 2025 Zeio Nara'
-    }
+    // footer: {
+    //   message: 'Подпишись на <a href="https://t.me/zeioch" target="_blank">мой тг канал</a>'
+    //   copyright: '© 2025 Zeio Nara'
+    // }
   },
   server: {
     port: 1220,

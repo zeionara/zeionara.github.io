@@ -33,11 +33,6 @@ export function generateSidebar(dir, basePath = `/${dir}/`) {
           basePath + entry + '/'
         )
       )
-      // items.push({
-      //   text: entry,
-      //   collapsed: false,
-      //   items: generateSidebar(path.join(dir, entry), basePath + entry + '/')
-      // })
     } else if (stat.isFile() && entry.endsWith('.md')) {
       const name = entry.replace('.md', '')
 
