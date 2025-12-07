@@ -1,0 +1,3 @@
+[submodule "hyprfiction"]
+	path = hyprfiction
+	url = git@github.com:zeionara/hyprfiction.git
