@@ -18,6 +18,10 @@ jobs:
         with:
           node-version: 24
           cache: 'npm'
+      - name: Pwd
+        run: pwd
+      - name: List
+        run: ls
       - name: Install dependencies
         run: npm install
       - name: Build
