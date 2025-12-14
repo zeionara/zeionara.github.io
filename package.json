@@ -5,6 +5,7 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
+    "@lobehub/icons-static-svg": "^1.74.0",
     "vitepress": "^1.6.4"
   }
 }
