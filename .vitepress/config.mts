@@ -4,14 +4,26 @@ import { generateSidebar } from './sidebar'
 import fs from 'node:fs'
 import path from 'node:path'
 
-const ICONS_DIR = path.resolve(
+const LOBEHUB_ICONS_DIR = path.resolve(
   process.cwd(),
   'node_modules/@lobehub/icons-static-svg/icons'
 )
+const CUSTOM_ICONS_DIR = path.resolve(process.cwd(), 'public/icons')
 
-function icon(name: string): string {
+function lobehubIcon(name: string): string {
   const filename = name.endsWith('.svg') ? name : `${name}.svg`
-  const fullPath = path.join(ICONS_DIR, filename)
+  const fullPath = path.join(LOBEHUB_ICONS_DIR, filename)
+
+  if (!fs.existsSync(fullPath)) {
+    throw new Error(`[vitepress] SVG icon not found: ${filename}`)
+  }
+
+  return fs.readFileSync(fullPath, 'utf-8')
+}
+
+function customIcon(name: string): string {
+  const filename = name.endsWith('.svg') ? name : `${name}.svg`
+  const fullPath = path.join(CUSTOM_ICONS_DIR, filename)
 
   if (!fs.existsSync(fullPath)) {
     throw new Error(`[vitepress] SVG icon not found: ${filename}`)
@@ -38,17 +50,26 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/zeionara' },
+      { icon: 'gitlab', link: 'https://gitlab.com/zeio' },
       { icon: 'instagram', link: 'https://instagram.com/zeionara' },
       { icon: 'facebook', link: 'https://www.facebook.com/zeio.nara' },
       { icon: 'youtube', link: 'https://www.youtube.com/@tknogd' },
       { icon: 'telegram', link: 'https://t.me/zeioch' },
       {
         icon: {
-          svg: icon('sora')
+          svg: lobehubIcon('sora')
         },
         link: 'https://sora.chatgpt.com/profile/zeionara',
         ariaLabel: 'sora'
-      }
+      },
+      {
+        icon: {
+          svg: customIcon('meta-horizon')
+        },
+        link: 'https://horizon.meta.com/profile/940658195788932',
+        ariaLabel: 'meta horizon'
+      },
+      { icon: 'gmail', link: 'mailto:zeionara@gmail.com' },
     ],
 
     // footer: {
