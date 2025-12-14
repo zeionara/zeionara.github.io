@@ -78,13 +78,15 @@ export default defineConfig({
         ariaLabel: 'vk video'
       },
       { icon: 'twitch', link: 'https://www.twitch.tv/zeionara' },
-      { icon: 'steam', link: 'https://steamcommunity.com/id/zeionara' }
+      { icon: 'steam', link: 'https://steamcommunity.com/id/zeionara' },
+      {
+        icon: {
+          svg: customIcon('epic-games')
+        },
+        link: 'https://store.epicgames.com/en-US/u/746cd9e3c90946398a4f4c8222a4c991',
+        ariaLabel: 'epic games'
+      }
     ],
-
-    // footer: {
-    //   message: 'Подпишись на <a href="https://t.me/zeioch" target="_blank">мой тг канал</a>'
-    //   copyright: '© 2025 Zeio Nara'
-    // }
   },
   server: {
     port: 1220,

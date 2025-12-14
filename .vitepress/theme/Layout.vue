@@ -7,7 +7,8 @@ const { Layout } = DefaultTheme
   <Layout>
     <template #layout-bottom>
       <footer class="global-footer">
-        © 2025 Zeio Nara. Все права защищены. Подпишись на <a href="https://t.me/zeioch" target="_blank">мой тг канал</a>.
+        © 2025 Zeio Nara. Все права защищены.
+        <!--Подпишись на <a href="https://t.me/zeioch" target="_blank">мой тг канал</a>.-->
       </footer>
     </template>
   </Layout>
