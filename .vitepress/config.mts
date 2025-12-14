@@ -70,6 +70,15 @@ export default defineConfig({
         ariaLabel: 'meta horizon'
       },
       { icon: 'gmail', link: 'mailto:zeionara@gmail.com' },
+      {
+        icon: {
+          svg: customIcon('vk-video')
+        },
+        link: 'https://live.vkvideo.ru/zeioch',
+        ariaLabel: 'vk video'
+      },
+      { icon: 'twitch', link: 'https://www.twitch.tv/zeionara' },
+      { icon: 'steam', link: 'https://steamcommunity.com/id/zeionara' }
     ],
 
     // footer: {
