@@ -55,9 +55,21 @@
     display: none;
   }
   .MobileSocialLinksSlot {
-    display: none;
+    display: block;
   }
 }
 
+/* Группа = ряд иконок */
+.MySocialGroup { display:flex; align-items:center; flex-wrap:wrap; }
+
+/* На всякий случай перебьём дефолтный display у VPSocialLink */
+.MySocialGroup .VPSocialLink { display:inline-flex; }
+
 /* .SocialLinksSlot { flex: 1; display:flex; justify-content:flex-end; align-items:center; } */
 /* .VPNavBar .VPNavBarMenu { margin-left: 12px; } /* чуть сближаем */
+
+@media (max-width: 1280px) {
+  .MySocialLinks { display:flex; flex-direction:column; gap:10px; }
+  .MySocialGroup { justify-content:center; }
+  .MySocialDivider { display: none; }
+}

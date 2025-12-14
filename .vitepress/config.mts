@@ -48,7 +48,6 @@ export default defineConfig({
       '/hyprfiction/': generateSidebar('hyprfiction')
     },
 
-
     socialLinksGrouped: [
       { icon: 'github', link: 'https://github.com/zeionara' },
       { icon: 'gitlab', link: 'https://gitlab.com/zeio' },
