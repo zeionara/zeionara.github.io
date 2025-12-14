@@ -3,3 +3,61 @@
   margin-left: 4px;
   border-left: 1px solid var(--vp-c-divider);
 }
+
+.MySocialLinks {
+  display: flex;
+  align-items: center;
+}
+
+.MySocialDivider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--vp-c-divider);
+  margin: 0 8px;
+}
+
+.MySocialLink {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* гарантируем flex */
+.VPNavBar .content-body {
+  display: flex;
+  align-items: center;
+}
+
+/* ИКОНКИ: уезжают вправо */
+.SocialLinksSlot {
+  order: 2;            /* после title / search */
+  margin-left: auto;  /* КЛЮЧЕВОЕ */
+  display: flex;
+  align-items: center;
+}
+
+/* МЕНЮ: сразу после иконок */
+.VPNavBarMenu {
+  order: 3;
+}
+
+/* остальное — дальше вправо */
+.VPNavBarAppearance,
+.VPNavBarExtra,
+.VPNavBarHamburger {
+  order: 4;
+}
+
+.DesktopSocialLinksSlot { display: flex; }
+.MobileSocialLinksSlot { display: none; }
+
+@media (max-width: 1280px) {
+  .DesktopSocialLinksSlot {
+    display: none;
+  }
+  .MobileSocialLinksSlot {
+    display: none;
+  }
+}
+
+/* .SocialLinksSlot { flex: 1; display:flex; justify-content:flex-end; align-items:center; } */
+/* .VPNavBar .VPNavBarMenu { margin-left: 12px; } /* чуть сближаем */

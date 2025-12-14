@@ -48,13 +48,24 @@ export default defineConfig({
       '/hyprfiction/': generateSidebar('hyprfiction')
     },
 
-    socialLinks: [
+
+    socialLinksGrouped: [
       { icon: 'github', link: 'https://github.com/zeionara' },
       { icon: 'gitlab', link: 'https://gitlab.com/zeio' },
+      {
+        icon: {
+          svg: lobehubIcon('huggingface')
+        },
+        link: 'https://huggingface.co/zeio',
+        ariaLabel: 'hugging face'
+      },
+      { type: 'divider' },
       { icon: 'instagram', link: 'https://instagram.com/zeionara' },
       { icon: 'facebook', link: 'https://www.facebook.com/zeio.nara' },
-      { icon: 'youtube', link: 'https://www.youtube.com/@tknogd' },
       { icon: 'telegram', link: 'https://t.me/zeioch' },
+      { icon: 'vk', link: 'https://vk.com/zeionara' },
+      { type: 'divider' },
+      { icon: 'youtube', link: 'https://www.youtube.com/@tknogd' },
       {
         icon: {
           svg: lobehubIcon('sora')
@@ -64,20 +75,20 @@ export default defineConfig({
       },
       {
         icon: {
-          svg: customIcon('meta-horizon')
-        },
-        link: 'https://horizon.meta.com/profile/940658195788932',
-        ariaLabel: 'meta horizon'
-      },
-      { icon: 'gmail', link: 'mailto:zeionara@gmail.com' },
-      {
-        icon: {
           svg: customIcon('vk-video')
         },
         link: 'https://live.vkvideo.ru/zeioch',
         ariaLabel: 'vk video'
       },
       { icon: 'twitch', link: 'https://www.twitch.tv/zeionara' },
+      { type: 'divider' },
+      {
+        icon: {
+          svg: customIcon('meta-horizon')
+        },
+        link: 'https://horizon.meta.com/profile/940658195788932',
+        ariaLabel: 'meta horizon'
+      },
       { icon: 'steam', link: 'https://steamcommunity.com/id/zeionara' },
       {
         icon: {
@@ -86,21 +97,16 @@ export default defineConfig({
         link: 'https://store.epicgames.com/en-US/u/746cd9e3c90946398a4f4c8222a4c991',
         ariaLabel: 'epic games'
       },
-      { icon: 'vk', link: 'https://vk.com/zeionara' },
-      {
-        icon: {
-          svg: lobehubIcon('huggingface')
-        },
-        link: 'https://huggingface.co/zeio',
-        ariaLabel: 'hugging face'
-      },
       {
         icon: {
           svg: customIcon('riot-games')
         },
         link: 'https://op.gg/lol/summoners/eune/DElMOS-EUNE',
         ariaLabel: 'riot games'
-      }
+      },
+      { type: 'divider' },
+      { icon: 'gmail', link: 'mailto:zeionara@gmail.com' },
+      { type: 'divider' }
     ]
   },
   server: {
