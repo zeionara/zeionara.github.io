@@ -85,8 +85,23 @@ export default defineConfig({
         },
         link: 'https://store.epicgames.com/en-US/u/746cd9e3c90946398a4f4c8222a4c991',
         ariaLabel: 'epic games'
+      },
+      { icon: 'vk', link: 'https://vk.com/zeionara' },
+      {
+        icon: {
+          svg: lobehubIcon('huggingface')
+        },
+        link: 'https://huggingface.co/zeio',
+        ariaLabel: 'hugging face'
+      },
+      {
+        icon: {
+          svg: customIcon('riot-games')
+        },
+        link: 'https://op.gg/lol/summoners/eune/DElMOS-EUNE',
+        ariaLabel: 'riot games'
       }
-    ],
+    ]
   },
   server: {
     port: 1220,
