@@ -1,0 +1,9 @@
+.global-footer {
+  padding: 20px 0;
+  text-align: center;
+  opacity: .7;
+  font-size: 14px;
+}
+.global-footer a {
+  text-decoration: underline !important;
+}

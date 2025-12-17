@@ -1,0 +1,62 @@
+.VPNavBar .content-body {
+  display: flex;
+  align-items: center;
+}
+
+.VPSidebarItem .level-1 {
+  padding-left: 12px;
+  margin-left: 4px;
+  border-left: 1px solid var(--vp-c-divider);
+}
+
+.VPNavBarMenu {
+  order: 3;
+}
+
+.VPNavBarAppearance,
+.VPNavBarExtra,
+.VPNavBarHamburger {
+  order: 4;
+}
+
+.SocialLink {
+  display: inline-flex;
+  align-items: center;
+}
+
+.SocialLinkGroupSeparator {
+  width: 1px;
+  height: 24px;
+  background-color: var(--vp-c-divider);
+  margin: 0 8px;
+}
+
+.SocialLinkGroup { display:flex; align-items:center; flex-wrap:wrap; }
+.SocialLinkGroup .VPSocialLink { display:inline-flex; }
+
+.SocialLinkGroups {
+  display: flex;
+  align-items: center;
+}
+
+.SocialLinkGroupsSlot {
+  order: 2;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.SocialLinkGroupsSlot.desktop { display: flex; }
+.SocialLinkGroupsSlot.mobile { display: none; margin-top: 30px; }
+
+@media (max-width: 1280px) {  /* mobile */
+  .SocialLinkGroupsSlot.desktop {
+    display: none;
+  }
+  .SocialLinkGroupsSlot.mobile {
+    display: block;
+  }
+  .SocialLinkGroups { display: flex; flex-direction: column; }
+  .SocialLinkGroup { justify-content: center; }
+  .SocialLinkGroupSeparator { display: none; }
+}

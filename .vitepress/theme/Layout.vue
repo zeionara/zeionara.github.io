@@ -1,6 +1,6 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
-import SocialLinksInNav from './components/SocialLinksInNav.vue'
+import SocialLinkGroups from './components/SocialLinkGroups.vue'
 const { Layout } = DefaultTheme
 </script>
 
@@ -8,35 +8,22 @@ const { Layout } = DefaultTheme
   <Layout>
 
     <template #nav-bar-content-before>
-      <div class="SocialLinksSlot DesktopSocialLinksSlot">
-        <SocialLinksInNav class="SocialLinksInNav"/>
+      <div class="SocialLinkGroupsSlot desktop">
+        <SocialLinkGroups/>
       </div>
     </template>
 
     <template #nav-screen-content-after>
-      <div class="MobileSocialLinksSlot">
-        <SocialLinksInNav class="SocialLinksInMenu" />
+      <div class="SocialLinkGroupsSlot mobile">
+        <SocialLinkGroups/>
       </div>
     </template>
 
     <template #layout-bottom>
       <footer class="global-footer">
-        © 2025 Zeio Nara. Все права защищены.
-        <!--Подпишись на <a href="https://t.me/zeioch" target="_blank">мой тг канал</a>.-->
+        © 2025 Zeio Nara. Все права защищены.  Подпишись на <a href="https://t.me/zeioch" target="_blank">мой тг канал</a>.
       </footer>
     </template>
 
   </Layout>
 </template>
-
-<style>
-.global-footer {
-  padding: 20px 0;
-  text-align: center;
-  opacity: .7;
-  font-size: 14px;
-}
-.global-footer a {
-  text-decoration: underline !important;
-}
-</style>
