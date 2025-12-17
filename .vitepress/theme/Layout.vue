@@ -13,7 +13,7 @@ const { Layout } = DefaultTheme
       </div>
     </template>
 
-    <template #nav-screen-content-before>
+    <template #nav-screen-content-after>
       <div class="MobileSocialLinksSlot">
         <SocialLinksInNav class="SocialLinksInMenu" />
       </div>

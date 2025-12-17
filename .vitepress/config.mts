@@ -58,11 +58,7 @@ export default defineConfig({
         link: 'https://huggingface.co/zeio',
         ariaLabel: 'hugging face'
       },
-      { type: 'divider' },
-      { icon: 'instagram', link: 'https://instagram.com/zeionara' },
-      { icon: 'facebook', link: 'https://www.facebook.com/zeio.nara' },
-      { icon: 'telegram', link: 'https://t.me/zeioch' },
-      { icon: 'vk', link: 'https://vk.com/zeionara' },
+      { icon: 'gmail', link: 'mailto:zeionara@gmail.com' },
       { type: 'divider' },
       { icon: 'youtube', link: 'https://www.youtube.com/@tknogd' },
       {
@@ -104,7 +100,12 @@ export default defineConfig({
         ariaLabel: 'riot games'
       },
       { type: 'divider' },
-      { icon: 'gmail', link: 'mailto:zeionara@gmail.com' },
+      { icon: 'instagram', link: 'https://instagram.com/zeionara' },
+      { icon: 'facebook', link: 'https://www.facebook.com/zeio.nara' },
+      { icon: 'telegram', link: 'https://t.me/zeioch' },
+      { icon: 'vk', link: 'https://vk.com/zeionara' },
+      { type: 'divider' },
+      { icon: 'discord', link: 'https://discord.com/users/396820551974387733' },
       { type: 'divider' }
     ]
   },

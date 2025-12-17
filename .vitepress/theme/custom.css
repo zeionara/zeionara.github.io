@@ -48,7 +48,7 @@
 }
 
 .DesktopSocialLinksSlot { display: flex; }
-.MobileSocialLinksSlot { display: none; }
+.MobileSocialLinksSlot { display: none; margin-top: 30px; }
 
 @media (max-width: 1280px) {
   .DesktopSocialLinksSlot {
@@ -69,7 +69,7 @@
 /* .VPNavBar .VPNavBarMenu { margin-left: 12px; } /* чуть сближаем */
 
 @media (max-width: 1280px) {
-  .MySocialLinks { display:flex; flex-direction:column; gap:10px; }
-  .MySocialGroup { justify-content:center; }
+  .MySocialLinks { display: flex; flex-direction: column; }
+  .MySocialGroup { justify-content: center; }
   .MySocialDivider { display: none; }
 }
