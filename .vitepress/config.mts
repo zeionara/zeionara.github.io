@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from './sidebar'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 import fs from 'node:fs'
 import path from 'node:path'
@@ -41,11 +42,13 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Hyprfiction', link: '/hyprfiction' }
+      { text: 'Hyprfiction', link: '/hyprfiction' },
+      { text: 'Guides', link: '/guides' }
     ],
 
     sidebar: {
-      '/hyprfiction/': generateSidebar('hyprfiction')
+      '/hyprfiction/': generateSidebar('hyprfiction'),
+      '/guides/': generateSidebar('guides')
     },
 
     socialLinkGroups: [
@@ -134,5 +137,10 @@ export default defineConfig({
     allowedHosts: [
       'zeio.ru'
     ]
+  },
+  markdown: {
+    config(md) {
+      md.use(tabsMarkdownPlugin)
+    }
   }
 })
