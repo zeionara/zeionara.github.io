@@ -43,12 +43,12 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Hyprfiction', link: '/hyprfiction' },
-      { text: 'Guides', link: '/guides' }
+      { text: 'Guuids', link: '/guuids' }
     ],
 
     sidebar: {
       '/hyprfiction/': generateSidebar('hyprfiction'),
-      '/guides/': generateSidebar('guides')
+      '/guuids/': generateSidebar('guuids')
     },
 
     socialLinkGroups: [

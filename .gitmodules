@@ -1,3 +1,6 @@
 [submodule "hyprfiction"]
 	path = hyprfiction
 	url = git@github.com:zeionara/hyprfiction.git
+[submodule "guuids"]
+	path = guuids
+	url = git@github.com:zeionara/guuids.git
