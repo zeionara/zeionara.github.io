@@ -22,6 +22,10 @@ export function generateSidebar(dir, basePath = `/${dir}/`) {
   const items = []
 
   for (const entry of entries) {
+    if (entry === "public") {
+      continue
+    }
+
     const entryPath = path.join(fullDir, entry)
     const stat = fs.statSync(entryPath)
 
